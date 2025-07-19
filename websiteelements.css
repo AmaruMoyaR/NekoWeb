@@ -1,0 +1,157 @@
+/* Elements for my website */
+/* Fonts added */
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  background-color: #fff9f0;
+  font-size: 10pt;
+  font-family: ms gothic;
+  color: #0d496c;
+  background-image: url(fig/engin-akyurt-gJILnne_HFg-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+
+}
+
+p {
+  line-height: 7px;
+  margin-top: -5px;
+}
+
+a:link {
+  color: #8cc0ed;
+  text-decoration:underline;
+}
+
+a:visited {
+  color: #4b7acc;
+}
+
+a:hover {
+  color: #cf83d1;
+}
+
+a:active {
+	color: #211a0e;
+}
+
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+      "webmaster header header header header"
+      "nav main main main main"
+      "nav main main main main"
+      "nav main main main main"
+      "nav footer footer footer footer";
+  width: 900px;
+  height: 700px;
+  margin: auto 200;
+  position: center;
+  border: 2px solid #273B05;
+  background: #58750e13;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 5px;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  width: 700px;
+  margin: auto;
+  border: 2px solid #273b0500;
+  background: #58750e00;
+  border-radius: 20px;
+  overflow-y: auto; /* enables vertical scrolling if content grows */
+  padding: 1px;
+  gap: 0px;
+}
+
+
+.webmaster {
+  background-color: #fffbf6;
+  box-shadow: 4px 4px 4px inset white,-3px -3px 3px inset #d6b6a9;
+  padding: 10px;
+  border: 1px solid #273B05;
+  grid-area: webmaster;
+  border-top-left-radius: 20px;
+  justify-content: center;
+  align-content: center;
+  display: block;
+  scrollbar-width: none;
+}
+
+.header {
+  background-image: url(https://file.garden/ZpbLWAeDJ0qCfnKS/cloverbg.jpg);
+  background-color: #8cba1a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  border: 1px solid #273B05;
+  grid-area: header;
+  border-top-right-radius: 20px;
+}
+
+.nav {
+  background-color: #fffbf6;
+  box-shadow: 4px 4px 4px inset white,-3px -3px 3px inset #d6b6a9;
+  padding: 5px;
+  border: 1px solid #273B05;
+  grid-area: nav;
+  border-bottom-left-radius: 20px;
+  scrollbar-width: none;
+}
+
+.main {
+  background-color: #fffbf6;
+  box-shadow: 4px 4px 4px inset white,-3px -3px 3px inset #d6b6a9;
+  padding: 5px;
+  border: 1px solid #273B05;
+  overflow-y: scroll;
+  grid-area: main;
+  scrollbar-width: none;
+}
+
+.footer {
+  background-color: #fffbf6;
+  box-shadow: 4px 4px 4px inset white,-3px -3px 3px inset #d6b6a9;
+  padding: 5px;
+  border: 1px solid #273B05;
+  grid-area: footer;
+  border-bottom-right-radius: 20px;
+  scrollbar-width: none;
+}
+
+
+.section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 300px;
+    line-height: 1.5;
+    margin-left: 5rem;
+}
