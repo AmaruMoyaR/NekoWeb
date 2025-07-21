@@ -116,11 +116,13 @@ a:active {
 .footer {
   background-color: #fffbf6;
   box-shadow: 4px 4px 4px inset white,-3px -3px 3px inset #d6b6a9;
-  padding: 1px;
+  padding: 10px;
   border: 1px solid #273B05;
   grid-area: footer;
   border-bottom-right-radius: 10px;
   scrollbar-width: none;
+  height: 900px;
+  width: 300px;
 }
 
 .section {
@@ -128,20 +130,15 @@ a:active {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 1.5rem;
     width: 500px;
     line-height: 1.3;
-    margin-left: 5rem;
+    margin-left: 2.5rem;
 }
 
-/* .section h2 {
-    display: flex;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 1rem;
-    margin: 0.5rem;
-    width: 300px;
-    line-height: 1.5;
-    margin-left: 5rem;
-} */
+.lilguy{
+    background-image: url(fig/Sprite-0002.png);
+      position: absolute;
+    margin-left: 28rem;
+  margin-top: -16rem;}
+   
